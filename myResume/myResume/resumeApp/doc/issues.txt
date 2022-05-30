@@ -1,0 +1,7 @@
+ISSUES FOUND at resumeApp development
+
+- Error reuning server, no module found 'appName'. Issue found when adding the new app to the INSTALLED_APPS list inside the project settings.py.
+	In the INSTALLED_APPS list must be the route to the app folder, including intermediate folders from the directory where settings.py is located.
+
+- Now the css, images and js files are not found by the html file, even when it opens in VSCode.
+The issue is that everything must be in the STATIC_URL folder configured in the project settings.py
