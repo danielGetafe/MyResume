@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'myResume.resumeApp',
+    'resumeApp',
     'django.contrib.staticfiles',
 ]
 
@@ -43,7 +43,7 @@ ROOT_URLCONF = 'myResume.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path(__file__).resolve().parent / 'resumeApp'],
+        'DIRS': [BASE_DIR / 'resumeApp'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -104,7 +104,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIR = [Path(__file__).resolve().parent / 'resumeApp/static/',]
+STATICFILES_DIR = [BASE_DIR / 'resumeApp/static/',]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

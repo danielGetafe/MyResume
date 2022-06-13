@@ -16,5 +16,5 @@ Including another URLconf
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('myResume.resumeApp.urls')),
+    path('', include('resumeApp.urls')),
 ]
